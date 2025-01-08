@@ -1,0 +1,117 @@
+JavaScript Operators:
+	1)Arithimetic operator: + ,- ,* ,Division(/){quotient is given as the solution} , 
+		       		Modulus Operator (%){Remainder is given as the solution} , 
+		       		Exponential(**){Raised to the power} , ++ , -- .
+
+	2)Assignment operator : ={Equals to}
+
+	3)Logical operator    : and(&&){when both condition is true then it is true} , 
+			    	or(||){if any one condition is true then it is true} , 
+			    	not(!).
+
+	4)Relational Operator : Comparison operators: > , < , >= , <= , Equality(==) , 
+				Strict Equality(===){checks the data type and returns Boolean value} ,
+				not Equals to(!=) ,
+				strict not equals (!===) .
+
+	5)ternary operator (?) Ex: Condition ? e1:e2
+
+
+---->window methods
+	.alert()
+	.prompt()
+	.confirm()
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+
+        let a="Indra"
+        let b="Kiran"
+        let age=20
+        let greeting=`I am ${a+b},my age is ${age}`
+        console.log(greeting)
+    </script> -->
+
+    <!-- <script>
+        let a="Indra"
+        let b="Kiran"
+        let sub="ReactJs"
+        let student=`${sub} = ${a+b}`
+        console.log(student)
+    </script> -->
+
+    <!-- <script>
+        let x=5;
+        let y=5;
+        document.write(x/y , "<br>");
+        document.write(x%y , "<br>");
+        document.write(x*y , "<br>");
+        document.write(x**y , "<br>");
+        document.write(x+y , "<br>");
+        x++ 
+        document.write(x , "<br>");
+        
+    </script> -->
+
+    <!-- <script>
+        let x=5;
+        let y=6;
+        x+=y;
+        document.write(x , "<br>");
+        y-=10;
+        document.write(y);
+    </script> -->
+
+    <!-- <script>
+        let x=10;
+        let y=10;
+        document.write(x=y && x>10 , "<br>");
+        document.write(x<11 || y>11 ,  "<br>");
+        document.write(!(x=y));
+    </script> -->
+
+    <!-- <script>
+        let x=10;
+        let y='5'
+        document.write(x=y , "<br>");
+        document.write(typeof(x) , "<br>");
+        document.write(x==y , "<br>");
+        document.write(x===y , "<br>");
+    </script> -->
+
+    <!-- <script>
+        let x=20;
+        let y=(x<=20) ? "Ac-on":"Ac-off"   // it reflects the if statement if the condition
+                                          // is true then first expression will be executed 
+                                         // if not then the second expression will be printed
+        document.write(y)
+    </script> -->
+
+    <!-- <script>
+        alert("hi kiran")
+        console.log(alert);
+        let age=prompt("what's your age?")
+        let a=(age<=20) ? "age is:+age ":"age can not be defined"
+        document.write(a)
+
+    </script> -->
+
+    <script>
+        let aa=prompt()
+        let bb=prompt()
+        console.log(typeof(aa))
+        console.log(typeof(aa))
+        console.log(aa+bb)
+        document.write(aa+bb)
+    </script>
+</body>
+</html>
