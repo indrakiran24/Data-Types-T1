@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let a=4
+        let b=5
+        if(a==b){
+            document.write("hello kiran", "<br>")
+        }else{
+            document.write("hello hrushi", "<br>")
+        }
+        document.write("chiru is topper")
+    </script> -->
+
+    <!-- <script>
+        let q=prompt("Enter bridegroom's age!")
+        let a=prompt("Enter bride's age!")
+        if(q<18){
+            document.write("Their age can't match" , "<br>")
+        }else if(a>35){
+            document.write("Their age can't match", "<br>")
+        }
+        else{
+            document.write("They can marry")
+        }
+       
+    </script> -->
+
+    <script>
+        let a=prompt("enter score of A")
+        let b=prompt("enter the score of B")
+        let c=a+b
+        if(a||b>300 && c<500){
+            document.write("They can teamup")
+        }else{
+            document.write("they can't teamup")
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+Day-4
+ Conditional Statements:
+--->To make the set instructions(block of code)(conditional statements) execute only when the given condition is true
+--->used to decide whether the code has to be executed or skip based on the given condition
+--->Is executed in a sequence(Line-By-Line)
+	* Block of Code: set of Instructions
+	* Condition: An expression that evaluates an result(True or False)
+	* Ex:console.log(5>6)		
+	
+---->Methods:
+	* If
+	* If-else
+	* else if
+	* Switch
+	* Ternary Operator
+
+---->IF: only one possible condition. If the condition is true it will be executed or it will skip.
+		Synatx: if(condition){
+			  block of code
+			}
+---->
