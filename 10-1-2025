@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let a=4
+        let b=5
+        if(a==b){
+            document.write("hello kiran", "<br>")
+        }else{
+            document.write("hello hrushi", "<br>")
+        }
+        document.write("chiru is topper")
+    </script> -->
+
+    <!-- <script>
+        let q=prompt("Enter bridegroom's age!")
+        let a=prompt("Enter bride's age!")
+        if(q<18){
+            document.write("Their age can't match" , "<br>")
+        }else if(a>35){
+            document.write("Their age can't match", "<br>")
+        }
+        else{
+            document.write("They can marry")
+        }
+       
+    </script> -->
+
+    <!-- <script>
+        let a=prompt("enter score of A")
+        let b=prompt("enter the score of B")
+        let c=a+b
+        if(a||b>300 && c<500){
+            document.write("They can teamup")
+        }else{
+            document.write("they can't teamup")
+        }
+    </script> -->
+
+    <!-- <script>
+        let a=pareseInt(prompt("enter the number to be divisible"))
+        if(a % 2==0){
+            document.write("The number is divisible by 2")
+        }else if(a % 3==0){
+            document.write("The number is divisible by 3")
+        }else if(a % 2 && 3==0){
+            document.write("The number is divisble by both 2 and 3")
+        }else{
+            document.write("This is not divisible by both 2 and 3")
+        }
+    </script> -->
+
+    <!-- <script>
+        let a=prompt("Enter the first number")
+        let b=prompt("Enter the second number")
+        let c=prompt("Enter the third number")
+        if(a> c || b){
+            document.write(a+ " is the largest number")
+        }
+        else if(b> c || a){
+            document.write(b+ "is the largest number")
+        }
+        else{
+            document.write(c+ "is the largest number")
+        }
+    
+    </script> -->
+
+    <!-- <script>
+        let a=parseInt(prompt("Total number of working days"))
+        let b=parseInt(prompt("Enter number of days absent"))
+        let c= a-b
+        let d= (c/a)*100
+        if(d<75){
+            document.write("Student is not eligible to write the exam")
+
+        }
+        else{
+            document.write("student is eligible to write the exam")
+        }
+    </script> -->
+
+
+    <!-- take salary and years of service as prompt.If the service of the person is more than 10 years give bonus 10%,
+     if >=6 and <10 then give 8%,if <6 give 4% and print total amount of salary with bonus -->
+    <!-- <script>
+        let a=parseInt(prompt("enter the salary"))
+        let b=parseInt(prompt("enter the years of service"))
+      if(b>10){
+        c=a*0.1
+        d=a+c
+        document.write(d+"salary after 10 years service with bonus")
+      }
+      else if(b>=6 && b<=10){
+        e=a*0.08
+        f=a+e
+        document.write(f+" ", "Salary with bonus after more than 6 years and less than 10 years")
+      }
+      else if(b<6){
+        g=a*0.04
+        h=a+g
+        document.write(g+" ","Salary with bonus after less than 6 years of service")
+      }
+      else{
+        document.write(a)
+      }
+    </script> -->
+
+    
+</body>
+</html>
