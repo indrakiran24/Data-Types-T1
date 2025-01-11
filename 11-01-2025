@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let num=prompt("enter a number")
+        switch(true){
+            case num>0:
+                console.log("number is positive")
+                break;
+            case num==0:
+                console.log("number is zero")
+                break;
+            case num<0:
+                console.log("number is negative")
+                break;
+            default:
+                    console.log("Invalid number")
+        }
+    </script> -->
+
+
+    <!-- <script>
+        let week=prompt("enter the week")
+        switch(true){
+            case week=="Monday":
+            case week=="tuesday":
+            case week=="wednesday":
+            case week=="thursday":
+                console.log("this is a weekday");
+                break;
+            case week=="friday":
+            case week=="saturday":
+            case week=="sunday":
+                console.log("this is weekend");
+                break;
+            default:
+                console.log("invalid")
+        }
+    </script> -->
+
+<script>
+        
+        let units=parseInt(prompt("enter the units of electricity"))
+        if(units<=50){
+            a=units*2
+            b=(a*20)/100
+            document.write(b+a)
+        }else if(units>=51 && units<=150){
+            c=(50*2)+((units-50)*3)
+            d=(c*20)/100
+            document.write(d+c)
+        }else if(units>=151 && units<=250){
+            e=(50*2)+((100*3))+((units-150)*5)
+            f=(e*20)/100
+            document.write(f+e)
+        }else if(units>=251){
+            g=(units*2)+((100*3))+((100*5))+((units-250)*8)
+            h=(g*20)/100
+            document.write(h+g)
+        }
+        else{
+            document.write("invalid units")
+        }
+    </script>
+
+    
+</body>
+</html>
