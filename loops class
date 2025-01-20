@@ -1,0 +1,63 @@
+---->Loops:
+	-->loops the block of code
+		*for Loop		
+		*for in loop
+		*for of 
+		*while
+		*do While
+
+
+		1)for loop[Syntax->initialization; condition; update-expression{
+										Block of code}]
+				
+   					EX:->for(let i=1;i<=5;i++){
+							console.log(i)		
+						}
+
+					EX2:->for(let i=2;i<=9;i=i+2){           //i=2-->2+3=5-->print(5)--->	
+						console.log(i+3)	          i=i+2=>2+2=4--->4+3=7-->print(7)---->
+						}				  i=i+2--->4+2=6--->6+3=9-->print(9)--->
+									          i=i+2=>6+2=8--->8+3=11-->print(11)-->output:-5,7,9,11
+
+
+
+<!-- 
+    <script>
+        for(let i=0;i<=6;i++){
+            console.log(i);
+        }
+    </script> -->
+    <!-- <script>
+        for(let i=1;i<=5;i++){
+            console.log(i)
+        }
+        </script> -->
+   
+   <!-- <script>                                
+        for(let i=2;i<=9;i=i+2){
+            document.write(i+3,"<br>");    
+            console.log(i+3);
+        }
+    </script> -->
+<!-- 
+    <script>
+        for(a=1;a<=5;a++){
+            console.log("chiru")
+            document.write("chiru", "<br>")
+        }
+        document.write("<br>");
+        for(z=1;z<=10;z++){
+            //document.write("9 x "+ z +" = " +z*9, "<br>")  
+            document.write(`9x${z}=${z*9}`,"<br>")
+        }
+        
+    </script> -->
+
+    <script>
+        a=[1,2,3,4];
+        let sum=0
+        for(let i=0;i<numbers.lenght;i++){
+            sum=sum+numbers[i]
+            document.write(sum)
+        }
+    </script>
