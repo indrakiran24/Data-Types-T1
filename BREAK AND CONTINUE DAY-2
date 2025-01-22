@@ -1,0 +1,83 @@
+  </script> -->
+    <!-- <script>
+        for(let i=2;i<=8;i=i+2){
+            if(i>5){
+                break;
+            }console.log(i+1)
+        }
+    </script> -->
+        <!-- <script>
+            for(let i=1;i<=8;i=i+2){
+                if(i>5){
+                    continue;
+                }console.log(i+1)
+            }
+        </script> -->
+        <!-- <script>
+            for(let i=1;i<=3;i++){
+                document.write(i,"<br>")
+            for(let j=1;j<=4;j++){
+                document.write(j," ")
+            }
+            document.write("<br> ")
+            }
+        </script> -->
+        <!-- <script>
+            for(let i=1;i<=3;i=i++){
+            for(let j=1;j<=i;j=j++){
+                document.write("*")
+            }
+            document.write("<br>")
+            }
+        </script> -->
+
+           <!-- <script>
+ for(let i=1; i<=5; i++){
+        for(let j=1;j<=i;j++){
+          document.write("*")
+        }
+        document.write("<br>")
+        }
+    </script> -->
+    <!-- <script>
+        for (let i = 1; i <= 4; i++) {
+      for (let j = 1; j <= 4 - i; j++) {
+        document.write("&nbsp;");
+      }
+      for (let k = 1; k <= i; k++) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+    document.write("<br>");
+    </script> -->
+
+
+
+
+
+		EX:	            for(let i=1;i<=8;i=i+2){	//i=1-->log(1+1)-->log(2)-->print(2)
+               				 if(i>5){		//i=2-->i=i+2=>i=>1+2=3-->log(i+1)=>log(3+1)=>print(4)
+                 			   continue;		//i=3-->i=i+1=>i=>3+2=5-->log(i+1)=>log(5+1)=>print(6)
+              				  }console.log(i+1)
+          				  }
+
+
+
+--->Nested loops:
+	a loop inside another loop
+	A thinner loop will execute on time for each iterations of the outer loop
+	An inner loop within the repeating block of outer loop.
+
+	EX:-->            for(let i=1;i<=3;i++){
+                	document.write(i,"<br>")		//here the first for loop will be executed with single iteration,And then the total iterations in inner for loop will
+            		for(let j=1;j<=4;j++){			be executed so the output is: 1
+               		 document.write(j," ")						      1234	
+            		}								      2 	
+            		document.write("<br> ")						      1234	
+            		}								      3		
+											      1234		
+	
+
+
+
