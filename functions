@@ -1,0 +1,70 @@
+ <!-- <script>
+        function greet(){
+            cosole.log("Hi Venky")
+        }
+        greet()
+        console.log("Hi Ravi")
+        greet()
+        cosole.log("Hi ganesh")
+        greet()
+        function greet(){
+            cosole.log("Hello Sainath")
+        }
+        greet()
+    </script> -->
+     <!-- <script>
+        function g(name){
+            console.log("Hi!"+name)
+        }
+        let h=prompt("Enter the name")
+        g(h)
+    </script> -->
+    <!-- <script>
+        function add(A1,A2){
+            document.write("the sum is "+(A1+A2))
+        }
+        function sub(B1,B2){
+            document.write("the sub is "+(B1-B2))
+        }
+        let I1=parseInt(prompt("Enter first number"))
+        let I2=parseInt(prompt("enter second number"))
+        add(I1,I2)
+    </script> -->
+    <script>
+        let n=prompt(parseInt("Enter the number"))
+        let isprime=true;
+    </script>
+
+
+
+
+
+Parameters=values(variables) which are declared inside the() Whiole defining a functions
+arguments=Values which are passed through the parameters at the time of calling the function
+
+
+function return:
+----------------
+	-->The return statement can be used to return the value to the function call
+	EX:->    	 <script>
+       			function add(A1,A2){
+            		document.write("the sum is "+(A1+A2))
+        		}
+        		function sub(B1,B2){
+            		document.write("the sub is "+(B1-B2))
+        		}
+        		let I1=parseInt(prompt("Enter first number"))
+        		let I2=parseInt(prompt("enter second number"))
+        		add(I1,I2)
+    			</script>
+
+
+Anonymous function:
+-------------------
+	-->A function without name , After we create a function without name we can assign it to a variable
+	EX:->	sum=function(n1,n2){
+			let r=n1+n2
+			return r
+			}
+			console.log((sum(8,9))
+
