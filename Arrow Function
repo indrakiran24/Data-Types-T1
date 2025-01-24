@@ -1,0 +1,108 @@
+Arrow Funcitons:
+----------------
+	*ES6 version
+	*more readable and more structure
+	*Annonuymous functions(lambda Functions)
+	*without FUNCTION NAME BUT THEY ARE ASSIGNED to a variable.
+	-->EX:
+		1)Arrow functions without parameters;
+			let c=()=>{
+				console.log("hi name")
+			}
+			c()
+		2)Arrow functions with the parameters
+			let A=(x,y)=>{
+				console.log(x+y)
+			}
+			A(10,20)
+			A(5,10)
+
+        3)Arrow function with one argument.Without using paranthesis
+            let greet=x=>console.log(x);
+            greet('hello name')
+
+
+-->Ternary Operator: The conditional (ternary) operator is the only JavaScript operator
+                     that takes three operands: a condition followed by a question mark ( ? ),
+                     then an expression to execute if the condition is truthy followed by a colon ( : ),
+                     and finally the expression to execute if the condition is falsy.
+            Syntax--> (condition)? E1:E2
+            EX:->let age=18;
+                let welcome=(age<18)?       //here if the condition is true then the first statement will be printed orelse the next statemnt will be printed same as of if else conditions
+                ()=>console.log("hi")
+                ()=>console.log("hello")
+                welcome()
+
+        Synchronous and Asyncronous functions:->ASynchronous[A step by step process a multi step processes]
+
+
+        Note:->setTimeout()-->built in function
+
+                EX: console.log("hi kiran")          //here first the hi kiran will be executed the bye kiran will be executed because the Asyncronousfunction is defined i.e the time to load is for the i am waiting is 5000 so before it gets load the last statement will be executed.
+                    setTimeout(()=>{
+                    console.log("I am waiting here")   
+                    5000;
+                    })
+                    console.log("bye kiran")
+
+
+---->JavaScript Callbacks:
+            It is a function that is passed argument to another function;
+                EX: function greet(name, callback){
+                            console.log(`hello,${name}!`)
+                            callback();     // this si the callback function after greeting
+                            }
+                            fucntion sayGoodbye(){
+                            console.log("Good Bye")
+                            }
+
+
+
+ </script> -->
+    <!-- <script>
+        let c=()=>{
+            console.log("hi name")
+        }
+        c()
+    </script> -->
+    <!-- <script>
+        let A=(x,y)=>{
+				console.log(x+y)a
+			}
+			A(10,20)
+			A(5,10)
+    </script> -->
+<!-- <script>
+     let greet=x=>console.log(x);
+     greet('hello name')
+</script>
+<script>
+    let gret=()=>console.log("hello");
+    gret()
+</script> -->
+<!-- <script>
+    let age=18;
+                let welcome=(age<18)?
+                ()=>console.log("hi"):
+                ()=>console.log("hello")
+                welcome()
+</script> -->
+
+<!-- <script>
+    console.log("hi kiran")
+    setTimeout(()=>{
+    console.log("I am waiting here")
+    ;
+    })
+    console.log("bye kiran")
+</script> -->
+<script>
+    function greet(name, callback){
+        console.log(`hello,${name}!`)
+        callback();     // this si the callback function after greeting
+       }
+        function sayGoodbye(){
+        console.log("Good Bye")
+        }
+        greet("kiran",sayGoodbye)
+</script>
