@@ -1,0 +1,60 @@
+<!-- <script>
+    function greet(name, callback){
+        console.log(`hello,${name}!`)
+        callback();     // this si the callback function after greeting
+       }
+        function sayGoodbye(){
+        console.log("Good Bye")
+        }
+        greet("kiran",sayGoodbye)
+</script> -->
+<!-- <script>
+ function greet(name, callback){
+        console.log(`hello,${name}!`)
+        callback();
+       }
+        greet("kiran",fucntion(),{
+            console.log("developer")
+        })
+</script> -->
+<script>
+    function fetchData(callback){
+        console.log("Fetching data/...")
+        callback()
+    }setTimeout(function(){
+        console.log("Data Fetched/...")
+        
+    },2000);
+    function processData(){
+        console.log("Processing the fetched data/...")
+    }
+    fetchData(processData);
+</script>
+
+
+
+  
+---->JavaScript Callbacks:
+            It is a function that is passed argument to another function;
+			execution:The function receiving the callback will execute the callback at 
+			same point during its execution(often at the end or after an asynchronos operation is done)
+			mainfunction takes a callback as a parameters
+			callbackfunction is passed in mainfunction
+			inside the main function,the callback fuynction is called with callback()
+
+                EX: function greet(name, callback){
+                            console.log(`hello,${name}!`)
+                            callback();     // this is the callback function after greeting
+                            }
+                            fucntion sayGoodbye(){
+                            console.log("Good Bye")
+                            }
+				EX: function=>
+
+
+
+
+
+
+
+
