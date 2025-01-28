@@ -1,0 +1,55 @@
+
+--->DOM(Document Object Model)
+		--It is a programming interface in web development 
+		  that allows us to interact and manipulate(change) the HTML documents.
+		--When the webpage is loaded, the browser creates the DOM of the webpages.
+		--When an html file loaded into the browser the javascript cannot understand the the html document dirctly.
+		--DOM is basically the representation of the same document but in the form of tree-like structure 
+		  composted of  different objects.Each node represents the attributes
+		--HTML dom it allows javascript to access (get) and modify all the elements in HTML document. 
+
+		
+--->KEYPOINTS:-
+---------------
+				1)Structure:		The DOM represents the sturucture of HTML document as a tree;
+				    		 		Each node in a tree represents the elements,attributes, text
+				2)Manipulation:		Using js, you can interact with elements(buttons, h ,p) we can modify , add , remove elements
+									change the styles.
+
+----<In DOM the HTML elemsts are called as objects	
+----<properity:-is a value that we can set to the objects(like changing content of the html element)
+----<Methods:An action(like adding or deleting)
+
+--->Methods Of DOM:-
+		1)Getting an element methods:-
+				*Getting an element by ID[id-targeted for single element]
+				*Getting an element by Class[class-group of id's together]
+					--Returns all the element having that
+				*Getting an element by Tagnames
+				*Getting an element by query selector
+				<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="a">aa</h1>
+    <h1 class="a">bb</h1>
+    <h1 class="a">cc</h1>
+    <h1 class="b">dd</h1>
+    <h1 class="b">ee</h1>
+    <h1 class="b">ff</h1>
+    <h1 class="c">gg</h1>
+    <h1 class="c">hh</h1>
+    <h1 class="c">ii</h1>
+    <script>
+        let a=document.getElementsByClassName("a")
+        console.log(a)
+        for(let i=0;i<a.lenght;i++){
+            console.log(a[i])
+        }
+    </script>
+</body>
+</html>
