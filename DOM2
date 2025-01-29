@@ -1,0 +1,93 @@
+
+	QuerySelector:
+		Queryselector:used to select HTML element by its classname,tagname,it selects only the element
+
+				Example:
+			   ---------- 	
+					<body>
+    					<h1 class="z">kiran</h1>
+    					<h1 class="x">phani</h1>
+    					<h1 class="v">jithya</h1>
+    				<script>
+        				let ab=document.querySelector('z')
+        				console.log(ab)
+       					for(let i=0;i<ab.lenght;i++){
+            			console.log(ab[i])
+        				} 
+    				</script>
+				</body>
+
+	Manipulate the Elements:
+			*To create a HTML Element:
+					--createElement()
+					--document.createElement()
+						
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <h1 class="a">aa</h1>
+    <h1 class="a">bb</h1>
+    <h1 class="a">cc</h1>
+    <h1 class="b">dd</h1>
+    <h1 class="b">ee</h1>
+    <h1 class="b">ff</h1>
+    <h1 class="c">gg</h1>
+    <h1 class="c">hh</h1>
+    <h1 class="c">ii</h1>
+    <script>
+        let a=document.getElementsByClassName("a")
+        console.log(a)
+        for(let i=0;i<a.lenght;i++){
+            console.log(a[i])
+        }
+    </script>
+</body> -->
+
+<body>
+    <h1 class="z">kiran</h1>
+    <h1 class="x">phani</h1>
+    <h1 class="v">jithya</h1>
+    <script>
+        let ab=document.querySelector('z')
+        console.log(ab)
+       for(let i=0;i<ab.lenght;i++){
+            console.log(ab[i])
+        } 
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="z">kiran</h1>
+    <h1 class="x">phani</h1>
+    <h1 class="v">jithya</h1>
+    <script>
+      let ab = document.getElementsByTagName("h1");
+      console.log(ab);
+      for (let i = 0; i < ab.lenght; i++) {
+        console.log(ab[i]);
+      }
+    </script>
+    <script>
+        for(let i=0;i<t.lenght;i++){
+            let tt=document.createElement('h1')
+            tt.className="aa"
+            tt.text
+        }
+    </script>
+  </body>
+</html>
