@@ -1,0 +1,61 @@
+DOM Methods:
+	1)createElement(single,multiple)
+	2)appendChild() #parent at the end	
+	3)insertBefore(): 
+
+-->.insertBefore(): Used to insert an element before an exsisting node as a child node of a specified parent.
+				-->It requires a reference to both the new node and exsisting node you want to insert before.
+
+-->.removeChild():
+
+--.replace()
+
+
+</html> -->
+<body>
+  <!-- <div id="a">
+  <h1>kiran</h1>
+  <h1 id="r">phani</h1>
+  </div>
+  <div id="b">
+  <h1>jithya</h1>
+  <h1>nikethan</h1>
+  </div>
+  <script>
+      let ab=document.createElement('h1')
+      ab.textContent="Indra"
+      let p=document.getElementById('a')
+      let l=document.getElementById('r')
+      p.insertBefore(ab,l)
+  </script> -->
+  <!-- <div id="a">
+  <h1>inturi</h1>
+  <h1 id="c">kiran</h1>
+  </div>
+  <div id="d">
+    <h1>chowdary</h1>
+  </div>
+  <script>
+    let ch=document.createElement('h2')
+    ch.textContent="Indrakiran"
+    let p=document.getElementById('a')
+    let l=document.getElementById('c')
+    p.insertBefore(ch,l)
+  </script> -->
+
+
+  <div id="a">
+    <h1>inturi</h1>
+    <h1 id="c">kiran</h1>
+    </div>
+    <div id="d">
+      <h1>chowdary</h1>
+    </div>
+    <script>
+      let p=document.getElementById('a')
+      let l=document.getElementById('c')
+      document.write()
+      p.removeChild(l)
+    </script>
+</body>
+</html>
