@@ -1,0 +1,33 @@
+
+1)JavaScript
+2)React JS
+3)front end-projects
+4)SpringBoot ;Java
+5)Mysql
+6)Material Using
+7)End-to-End development.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let citizen=prompt(" citizen: Enter yes/no here:")
+        let age=parseInt(prompt("Enter your age"))
+        let citizentest=prompt(" citizenship test: Enter yes/no:")
+        if(age<18){
+            document.write("Not Eligible")
+            if(age>18 && citizen=='yes'){
+                document.write("Eligible to vote")
+                if(citizen=='no' && age>=18 && citizentest=='yes'){
+                    document.write("Eligible to vote")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
