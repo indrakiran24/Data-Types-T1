@@ -8,3 +8,26 @@
 	npx create-react-app my-app
 	cd my-app
 	npm start
+
+
+
+DOM Methods:
+	1)createElement(single,multiple)
+	2)appendChild() #parent at the end	
+	3)insertBefore(): 
+
+-->.insertBefore(): Used to insert an element before an exsisting node as a child node of a specified parent.
+				-->It requires a reference to both the new node and exsisting node you want to insert before.
+
+-->.removeChild():
+
+--.replace()
+
+1)JavaScript
+2)React JS
+3)front end-projects
+4)SpringBoot ;Java
+5)Mysql
+6)Material Using
+7)End-to-End development.
+
