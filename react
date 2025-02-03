@@ -1,0 +1,10 @@
+
+--->React JS:
+	1)javaScript-Library
+	2)Single page application
+	3)Every element is divided into componenets
+	4)When need to update the componenets specific componenets can be upated individually
+	
+	npx create-react-app my-app
+	cd my-app
+	npm start
