@@ -1,0 +1,85 @@
+
+--->React JS:
+	1)javaScript-Library
+	2)Single page application
+	3)Every element is divided into componenets
+	4)When need to update the componenets specific componenets can be upated individually
+	
+	npx create-react-app my-app
+	cd my-app
+	npm start
+
+
+Syntax:
+	React.createElement('h1')--->to create an element
+
+	ReactDom.create(element)
+	element.render()-->used to display elements in react
+
+	React element--what to render
+	Container------where to render
+
+
+-->JSX:
+		javaScript XML
+		-It is a syntax extension for js
+		-Here we write the html code and this will be transalted into js
+		-Babel
+	Points:
+		</br>
+		<img/>
+		class=className
+
+
+
+--->babel tool will convert the html code into java script
+
+-->Expressions in JSX:
+	   <script type="text/babel">
+        const n=10;
+        const m=<h1>react is {n*2} times better than JSX!</h1>
+        const element=<h1 className='a'>Hello JSX!</h1>
+        const e=document.getElementById('app')
+        const root=ReactDom.createRoot(e)
+        root.render(m)
+    </script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const n = 10;
+      const m = <h1>react is {n * 2} times better than JSX!</h1>;
+      const element = <h1 className="a">Hello JSX!</h1>;
+      const e = document.getElementById("app");
+      const root = ReactDom.createRoot(e);
+      root.render(m);
+    </script>
+  </body>
+</html>
+
+
+const b=React.createElement(
+    'h1',{id:'a'}, "I am important"
+);
+
+const element=document.getElementById('root')
+const root=ReactDOM.createRoot(element)
+root.render(b)
