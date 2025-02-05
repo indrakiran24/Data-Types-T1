@@ -1,0 +1,82 @@
+
+-->JSX:
+		javaScript XML
+		-It is a syntax extension for js
+		-It allows us to write html code in react(javascript)
+		-While using jsx all the html tags must be closed
+		-jsx compiles the html code to jsx--A tool is used to compile i.e babel(A tool used to convert the html code to jsx)
+		##CDN--these need to paseted to work on jsx codes
+
+
+--->Conditional Rendering:
+
+			<div id="root"></div>
+    <script type="text/babel">
+        const App=()=>{
+            const isLoggedIn=true;  
+        
+        return(
+            <div>
+                {isLoggedIn?(<h1>Welcome back,user!!</h1>):(<h1>Please Login</h1>)}
+                {isLoggedIn && <h1> you have a new notification </h1>}
+                </div>
+        )
+        }
+        const root=ReactDOM.createRoot(document.getElementById('root'))
+        root.render(<App/>)
+    </script>
+
+
+-->Functions:
+	 Using a function a call:
+	 	--You can use a function call directly in the jsx expressions:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="a"></div> -->
+    <!-- <script type="text/babel">
+        const n=5
+        const m=<h1>React is {n*20} better than JSX</h1>
+        const e=document.getElementById('a')
+        const root=ReactDOM.createRoot(e)
+        root.render(m)
+    </script> -->
+    <!-- <div id="root"></div>
+    <script type="text/babel">
+        const App=()=>{
+            const isLoggedIn=true;  
+        
+        return(
+            <div>
+                {isLoggedIn?(<h1>Welcome back,user!!</h1>):(<h1>Please Login</h1>)}
+                {isLoggedIn && <h1> you have a new notification </h1>}
+                </div>
+        )
+        }
+        const root=ReactDOM.createRoot(document.getElementById('root'))
+        root.render(<App/>)
+    </script> -->
+    <div id="a"></div>
+    <script type="text/babel">
+        function getGreeting(name){
+            return `hello,${name}! Welcome to react`
+        }
+        function Gretting(){
+            const name="name"
+            return <h1>{getGreeting(name)}</h1>
+        }
+        const root=ReactDOM.createRoot(document.getElementById('a'))
+        root.render(<Greeting/>)
+    </script>
+</body>
+</html>
