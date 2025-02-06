@@ -1,0 +1,77 @@
+Notes:
+
+06-02-2025
+----------
+
+React Project folders:
+	Public/index.html::-The main html file that serves as the entry point for the app
+	src/index.js:::-The javascript entry point for the react app where DOM is rendered
+	src/App.js::-The main component that serve as th eroot of the component tree
+	src/components:::-A folder to store the reusable components
+
+
+
+1)Components::-These are the building block of the react appliaction
+	--These help to create resuable block of code.
+	--If anything goes wrong in the UserInterface{UI} It will be usable to identify the error and to solve it.
+
+types::
+	1)Class Components
+	2)Function components.
+
+
+
+
+App.js
+import React from 'react';
+// import './App.css'
+import Welcome2 from'./Welcome2'
+
+// const Welcome=()=> <h1 className='message'>Hello!</h1>
+
+// function App(){
+//   return(
+//     <div className="App">
+//       <Welcome/>
+//     </div>
+//   )
+// }
+// export default App;
+
+const App=()=>{
+  return(
+    <div style={{textAlign:'center',color:'bisque'}}>
+      <Welcome2 name='name' greetings='hello!'/>
+      <Welcome2/>
+    </div>
+  )
+}
+export default App;
+
+
+App.css
+
+.message{
+  color: bisque;
+  background-color: rgb(80, 21, 21);
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  width: 30%;
+  margin-left: 80px;
+  
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.message {
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
