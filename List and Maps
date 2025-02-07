@@ -1,0 +1,70 @@
+App.js
+
+import React from 'react';
+import './App.css'
+import Welcome2 from'./Welcome2';
+import Greeting from './Greeting';
+import FruitList from './fruits';
+
+const TodoList=()=>{
+  const todos=['wake up','eat','sleep','repeat'];
+  return(
+    <div>
+      <TodoList/>
+    </div>
+  )
+}
+
+// const Welcome=()=> <h1 className='message'>Hello!</h1>
+// function App(){
+//   return(
+//     <div className="App">
+//       <Welcome/>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+// const App=()=>{
+//   return(
+//     <div style={{textAlign:'center',color:'bisque'}}>
+//       <Welcome2 name='name' greetings='hello!'/>
+//       <Welcome2/>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+// const App=()=>{
+//   return(
+//     // <div style={{textAlign:'center' , color:'blue'}}>
+//     //   <Greeting/>
+//     <div style={{textAlign:'left',color:'purple'}}>
+//       <FruitList/>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+fruits.js
+
+import React from "react";
+
+const FruitList=()=>{
+    const fruits=['pineapple','apple','grapes','grape','mango'];
+    return(
+        <div>
+            <h1 className="fruits">Fruits:</h1>
+            <ul>
+                {fruits.map((fruit,index)=>(
+                    <li key={index}>{fruit}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+export default FruitList
+
