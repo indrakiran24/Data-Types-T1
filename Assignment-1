@@ -1,0 +1,57 @@
+
+Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+ANs:  a particular kind of data item, as defined by the values it can take,
+	 the programming language used, or the operations that can be performed on it.
+
+	 JavaScript as a language provides the following eight basic data types:
+Number.
+String.
+Boolean.
+Null.
+Undefined.
+BigInt.
+Symbol.
+Object.
+
+Part three delves into non-primitive (or reference) data types.  Here, you'll list three common examples 
+(such as arrays, strings, and user-defined classes/objects), explain how they differ from primitives, provide real-world analogies, 
+and include code examples.  Finally, part four requires you to create a table summarizing the key distinctions between
+ primitive and non-primitive data types, considering aspects like memory storage, examples, whether they are predefined, 
+ and how they are accessed.  An example of how to present information about a primitive data type (like "integer" in Java) is provided to guide you.  
+Submit your assignment in a well-structured document, with clear headings and properly formatted code.
+
+
+
+//10-02-2025[React state]:
+
+// import React , {useState} from 'react'
+// const Counter=()=>{
+//   const[count,setCount]=useState(0);
+// return(
+//   <div style={{textAlign:'center',color:'bisque',backgroundColor:'black',padding:'316px'}}>
+//     <h1>{count}</h1>
+//     <button onClick={()=>setCount(count+1)}>Increment</button>
+//     <button onClick={()=>setCount(count-1)}>Decrement</button>
+//   </div>
+// )
+// }
+// export default Counter;
+
+
+import React,{useState} from 'react'
+
+const ThemeToggle=()=>{
+  const[theme,setTheme]=useState('light')
+
+  const toggleTheme=()=>{
+    setTheme(prevTheme=>(prevTheme==='light'?'dark':'light'))
+  }
+  return(
+    <div style={{backgroundColor:theme==='light'?'white':'black',color:theme==="light"?'black':'white',textAlign:'center'}}>
+      <h1 className='onClick'>The current Theme is {theme}</h1>
+      <button  onClick={toggleTheme} style={{textAlign:'center',backgroundColor:'bisque',}}>ToggleTheme</button>
+    </div>
+  )
+}
+
+export default ThemeToggle;
