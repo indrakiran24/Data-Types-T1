@@ -1,0 +1,55 @@
+mport React from "react";
+import './ProfileCard';
+
+const App = () => {
+  return (
+    <div>
+      <h1>User Profiles</h1>
+      <div className="profile-container">
+        <ProfileCard
+          name="Hrushikesh"
+          greeting="Hello"
+          imageSrc="https://www.google.com/url?sa=i&url=https%3A%2F%2Fletsenhance.io%2F&psig=AOvVaw0Wy8JbBedfiJP6Jolzbv2Y&ust=1739338916471000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCJm8n0uosDFQAAAAAdAAAAABAJ"
+        />
+        <ProfileCard
+          name="jithya"
+          greeting="Hey"
+          imageSrc="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FiPhoneX%2Fcomments%2F8eoord%2Fso_i_wanted_a_black_wallpaper_for_my_iphone_x_but%2F&psig=AOvVaw0l2jff-8sCLr6cbL3n0YMl&ust=1739340054504000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCp1ub4uosDFQAAAAAdAAAAABAE"
+        />
+        <ProfileCard
+          name="Phani"
+          greeting="Hi"
+          imageSrc="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fimage&psig=AOvVaw0Wy8JbBedfiJP6Jolzbv2Y&ust=1739338916471000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCJm8n0uosDFQAAAAAdAAAAABAE"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+App.css
+
+.profile-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
