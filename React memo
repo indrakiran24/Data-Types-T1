@@ -1,0 +1,64 @@
+App.js
+
+
+import {useState} from 'react';
+import ChildA from './ChildA'
+import ChildB from './ChildB'
+import './App.css'
+
+const Parent=()=>{
+  const[count,setCount]=useState(0);
+  const increment=()=>{
+    setCount(c=>c+1);
+  };
+  const decrement=()=>{
+    setCount(c=>c-1);
+  }
+  return(
+    <div>
+      <ChildA/>
+      <ChildB count={count} increment={increment} decrement={decrement}/>
+    </div>
+  )
+};
+export default Parent;
+
+
+ChildA.js
+import{memo} from 'react';
+const ChildA=()=>{
+    console.log("Child A Rendered")
+    return <h2>This is child A</h2>
+};
+// export default ChildA;
+export default memo(ChildA);
+
+
+
+ChildB.js
+
+const ChildB=({count,increment,decrement})=>{
+    console.log('Child b rendered')
+    return(
+        
+
+        <div className="buttons">
+            <div>Count:{count}</div>
+            
+            <button onClick={increment}>increment</button>
+            <button onClick={decrement}>decrement</button>
+        </div>
+       
+    )
+}
+export default ChildB;
+
+
+
+
+
+
+-->React memo:
+*It is a HOC(High order Component),it is not react Hooks
+*It will stop unnecessary-rendering of functional components of its props.
+*It will remove the performance of the functional components
