@@ -1,0 +1,122 @@
+-->use Contex():
+	props(properties) in react are used to pass data from parent componenets to child components.
+
+-->Prop Drilling:
+	It is a process of passing data from parent component to deeply(nested) child components through 
+	intermediate components , by passing data as props at each level.
+-->React Assignment on React Context:
+	Imagine you are building an app that displays the details of the user's profile.
+	the data about the user includes thier name and email.The app component will pass this user data to a deeply nested child component called profile.
+	1)Use prop drilling to pass data from App to Profile.
+	2)Use React Context to pass the data directly to profile without going through each componenets.
+
+// function App(){
+//   const data="I am parent Component"
+//   return(
+//     <div>
+//       <User1 data={data}/>
+//     </div>
+//   )
+// };
+// //user1 component
+// function User1({data}){
+//   return <User2 data={data}/>
+// }
+// //user2 component
+// function User2({data}){
+//   return <User3 data={data}/>
+// }
+// //user3 component
+// function User3({data}){
+//   return <User4 data={data}/>
+// }
+// //user4 component
+// function User4({data}){
+//   return <div>{data}</div>
+
+// }
+// export default App;
+
+// function App(){
+//   const data="I am parent Component"
+//   return(
+//     <div>
+//       <User1 data={data}/>
+//     </div>
+//   )
+// };
+// //user1 component
+// function User1({data}){
+//   return <User2 data={data}/>
+// }
+// //user2 component
+// function User2({data}){
+//   return <User3 />
+// }
+// //user3 component
+// function User3({data}){
+//   return <User4 />
+// }
+// //user4 component
+// function User4({data}){        //here the data is directy being fetched from from user1 to user4.So in this concept the data can only be
+//   return <div>{data}</div>    //fetched from user 1 to user2 than user 3 then user 4.But in this code the user4 is trying to dirctlty fetch data from user1 which can not be done so we do not get any output.
+
+// }
+// export default App;
+
+
+
+// function App() {
+//   const data = " name: Phani , roll no: 2211cs010222";
+//   return (
+//     <div>
+//       <User1 data={data} />
+//     </div>
+//   );
+// }
+// //user1 component
+// function User1({ data }) {
+//   return <User2 data={data} />;
+// }
+// //user2 component
+// function User2({ data }) {
+//   return <User3 data={data} />;
+// }
+// //user3 component
+// function User3({ data }) {
+//   return <User4 data={data} />;
+// }
+// //user4 component
+// function User4({ data }) {
+//   return <div>{data}</div>;
+// }
+// export default App;
+
+
+
+
+function App() {
+  const data = " name: Phani , roll no: 2211cs010222";
+  return (
+    <div>
+      <User1 data={data} />
+    </div>
+  );
+}
+//user1 component
+function User1() {
+  return <User2 data={data} />;
+}
+//user2 component
+function User2() {
+  return <User3  />;
+}
+//user3 component
+function User3() {
+  return <User4  />;
+}
+//user4 component
+function User4() {
+  return <div>{data}</div>;
+}
+export default App;
