@@ -1,0 +1,103 @@
+
+-->React Hooks:
+	React Reducer();
+	Callback()
+
+-->React renducer();
+	it is a function that helps to update (like score, a list) based on actions we take:
+		1)Current State:The current value of state
+		2)Action: Add or remove an item.
+		
+
+-->Callback():
+	in react, a call back is a function that is passed as an argument to another function
+	call backs are often to communicate with different components
+
+
+
+    
+// import React, {useReducer}from 'react'; 
+
+// //reducer function to track the number of apples
+
+// function appleReducer(state=3,action){
+//   switch(action.type){
+//     case 'ADD_APPLE':
+//     return state+1;
+//     case 'EAT_APPLE':
+//     return state-1;
+//     default:
+//       return state;
+//   }
+// }
+
+// function App(){
+//   const[state,dispatch]=useReducer(appleReducer,3)
+//   return(
+//     <div>
+//       <img  src='C:\Users\intur\OneDrive\Desktop\Training-221\apple-image.webp'></img>
+//       <h1>Apple counter</h1>
+//       <p>Number of Apples:{state}</p>
+//       <button  onClick={()=>dispatch({type:'ADD_APPLE'})}>ADD APPLE</button>
+//       <button onClick={()=>dispatch({type:'EAT_APPLE'})}>EAT APPLE</button>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+// import React,{useReducer} from "react";
+
+// function appleReducer(state={count:3, apples:[]},action){
+//   switch(action.type){
+//     case 'ADD_APPLE':
+//       return {count: state.count+1, apples: [...state.apples, 'apple']};
+//     case 'EAT_APPLE':
+//       if(state.count > 0){
+//         return {count: state.count-1, apples: state.apples.slice(0, -1)};
+//       }
+//       return state;
+//     default:
+//       return state;
+//   }
+// }
+// function App() {
+//   const [state,dispatch]=useReducer(appleReducer,{count:3, apples:[]})
+//   return (
+//     <div>
+//       <h1>Apple counter</h1>
+//       <p>Number of apples:{state.count}</p>
+//       <div>
+//         {state.apples.map((apple, index) => (
+//           <img key={index} src="https://tse3.mm.bing.net/th?id=OIP.KhdGeX1d8QMmtow7Lm5AZAHaF1&pid=Api&P=0&h=180" alt="apple" />
+//         ))}
+//       </div>
+//       <button onClick={()=>dispatch({type:'ADD_APPLE'})}>ADD APPLE</button>
+//       <button onClick={()=>dispatch({type:'EAT_APPLE'})}>EAT APPLE</button>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+
+// import React, { useState } from 'react';
+// import Children from'/.Children';
+// const Parent=()=>{
+//   const[message,setMessage]=useState('Message!')
+
+//   const changeMessage=()=>{
+//     setMessage('you changed the message')
+//   };
+//   return(
+//     <div>
+//       <h1>{message}</h1>
+//       <Children changeMessage={changeMessage}/>
+//     </div>
+//   )
+// }
+
+// export default Parent;
+
+
