@@ -1,0 +1,71 @@
+
+CSS flex box: For responsive webpages[the webpage can be access in any device]
+		1)Flex Items(parent)
+		2)Flex containers(child)
+
+display: flex
+
+justify-content: flex-start, flex-end, space-evenly,
+
+align-items: flex-start, flex-end, center, stretch,
+
+gap - it defines the gap between the html elements 
+
+flex-direction: row, coloumn, row-reverse, coloumn-reverse
+
+order - it specifies the order of html elements 
+
+flex-grow: it defines the expansion proportion of particular elements. it is 0 by default
+
+flex-shrink: it defines the collaption/ compression proportion 
+
+flex-basis: it defines the initial size of the elements. default value is auto
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .parent{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: first baseline;
+            align-items: flex-end;
+        }
+
+        .child{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .c1{
+            background-color: red;
+            order:1;
+            flex-grow:2;
+        }
+        .c2{
+            background-color: blue;
+            order: 3;
+            flex-grow: 1;
+
+        }
+        .c3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child c1">1</div>
+        <div class="child c2">2</div>
+        <div class="child c3">3</div>
+    </div>
+</body>
+</html>
